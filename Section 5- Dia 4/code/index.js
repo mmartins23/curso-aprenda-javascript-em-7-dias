@@ -11,3 +11,16 @@ num.splice(3, 0, 4, 5, 6);
 console.log(num);
 console.log(num.indexOf(8)); // 7
 console.log(num.includes(8)); // true
+
+
+// 65. Localizando itens em um Array de referencia
+
+// Array de objetos
+let cars = [
+    { marca: 'Toyota', modelo: 'Corolla', ano: 2020 },
+    { marca: 'Honda', modelo: 'Civic', ano: 2019 },
+    { marca: 'Ford', modelo: 'Focus', ano: 2018 }
+  ];
+
+const toyotaCar = cars.find(car => car.marca == 'Toyota');
+console.log(toyotaCar);
