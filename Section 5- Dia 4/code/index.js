@@ -113,3 +113,10 @@ const tempLondon = [15, 13, 8, 2];
 const hasPositiveTemp = tempLondon.every(temp => temp >0);
 
 console.log(hasPositiveTemp);
+
+
+// 73. Filtrando uma Array com o filter
+
+const PositiveTemp = tempLondon.filter(temp => temp % 2 === 0);
+console.log(PositiveTemp);
+
