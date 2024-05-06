@@ -24,3 +24,35 @@ let cars = [
 
 const toyotaCar = cars.find(car => car.marca == 'Toyota');
 console.log(toyotaCar);
+
+
+// 67. Removendo itens do Array
+
+// Criando um array
+let frutas = ['Maçã', 'Banana', 'Laranja'];
+
+// Removendo o último elemento usando pop()
+let ultimaFruta = frutas.pop();
+
+console.log('Última fruta removida:', ultimaFruta);
+console.log('Array atualizado:', frutas);
+
+
+// Criando um array
+let frutas1 = ['Maçã', 'Banana', 'Laranja'];
+
+// Removendo o primeiro elemento usando shift()
+let primeiraFruta = frutas1.shift();
+
+console.log('Primeira fruta removida:', primeiraFruta);
+console.log('Array atualizado:', frutas1);
+
+
+// Criando um array
+let frutas3 = ['Maçã', 'Banana', 'Laranja', 'Morango'];
+
+// Removendo o segundo elemento usando splice()
+let frutaRemovida = frutas3.splice(1, 1);
+
+console.log('Fruta removida:', frutaRemovida);
+console.log('Array atualizado:', frutas3);
