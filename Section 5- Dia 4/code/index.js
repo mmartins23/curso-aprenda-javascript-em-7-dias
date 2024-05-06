@@ -84,3 +84,23 @@ let frutas4 = ['Maçã', 'Banana', 'Laranja'];
 let stringFrutas = frutas4.join(', ');
 
 console.log(stringFrutas); // Saída: "Maçã, Banana, Laranja"
+
+
+// 71. Revertedo a sua Array
+
+// Criando uma array de frutas
+let frutas5 = ['Maçã', 'Banana', 'Laranja', 'Abacaxi'];
+
+// Usando o método sort() para ordenar a array em ordem alfabética
+frutas5.sort();
+
+console.log(frutas5); // Saída: ['Abacaxi', 'Banana', 'Laranja', 'Maçã']
+
+
+// Criando uma array de números
+let numeros = [1, 2, 3, 4, 5];
+
+// Usando o método reverse() para inverter a ordem dos elementos na array
+numeros.reverse();
+
+console.log(numeros); // Saída: [5, 4, 3, 2, 1]
