@@ -18,8 +18,16 @@ console.log(multiply(2, 3)); // Saída: 5
 // 81. Utilizando os Argumentos em funções
 function soma(...numeros) {
     return numeros.reduce((total, num) => total + num, 0);
-  }
-  
-  console.log(soma(1, 2, 3)); // Saída: 6
-  console.log(soma(10, 20, 30, 40)); // Saída: 100
-  
+}
+
+console.log(soma(1, 2, 3)); // Saída: 6
+console.log(soma(10, 20, 30, 40)); // Saída: 100
+
+// 82. Configurando parametros default
+
+function greeting(name = 'World') {
+    return `Hello ${name}`;
+}
+
+console.log(greeting()); // Hello World
+console.log(greeting('John')); // Hello John
