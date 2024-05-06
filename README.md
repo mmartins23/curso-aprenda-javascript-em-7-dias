@@ -1,6 +1,5 @@
-# JavaScript Course Completion README
+# Aprenda JAVASCRIPT em 7 dias + Projetos Reais (2024)
 
-Congratulations on completing the JavaScript course on Udemy!
 
 ## Course Overview
 
@@ -32,8 +31,6 @@ You can find **my course completion certificate** [here](https://udemy-certifica
 
 ![Certificate](UC-1bf03b4f-58fc-48f6-82a8-89d6c4f2221d.jpg)
 
-
-Best of luck with your future projects and happy coding!
 
 ---
 
