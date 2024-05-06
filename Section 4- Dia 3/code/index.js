@@ -7,7 +7,13 @@ const book = {
     bookChapters: {
         chap1: 'Fundamentals',
         chap2: '1st Law'
+    },
+
+    printBook: () => {
+        console.log('Printing ...')
     }
 }
 
 console.log(book);
+// 49. Funções dentro de um Objeto
+book.printBook();
