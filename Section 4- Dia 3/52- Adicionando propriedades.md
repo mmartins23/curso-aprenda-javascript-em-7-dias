@@ -1,37 +1,43 @@
 # Adicionando propriedades
 
-Você pode adicionar propriedades adicionais ao objeto retornado pela factory. Aqui está como você pode fazer isso:
+Aqui está um exemplo de como adicionar apenas propriedades (e não métodos) aos objetos criados por uma factory em JavaScript:
 
 ```javascript
 // Factory para criar objetos carro
-function criarCarro(marca, modelo, ano, cor) {
-  return {
+function criarCarro(marca, modelo, ano) {
+  let carro = {
     marca: marca,
     modelo: modelo,
-    ano: ano,
-    cor: cor,
-    mostrarDetalhes: function() {
-      return `Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}, Cor: ${this.cor}`;
-    }
+    ano: ano
   };
+
+  return carro;
 }
 
 // Criar um novo carro usando a factory
-let meuCarro = criarCarro("Toyota", "Corolla", 2020, "Preto");
+let meuCarro = criarCarro("Toyota", "Corolla", 2020);
 
-console.log(meuCarro.mostrarDetalhes());
+// Adicionar uma nova propriedade ao carro criado
+meuCarro.cor = "Preto";
+
+// Exibindo detalhes do carro
+console.log(meuCarro);
 ```
 
 **Saída:**
 
-```
-Marca: Toyota, Modelo: Corolla, Ano: 2020, Cor: Preto
+```javascript
+{
+  marca: 'Toyota',
+  modelo: 'Corolla',
+  ano: 2020,
+  cor: 'Preto'
+}
 ```
 
 ### Explicação:
 
-- Adicionamos uma nova propriedade `cor` ao objeto retornado pela factory.
-- Passamos o valor da cor como um parâmetro ao chamar a factory `criarCarro`.
-- O método `mostrarDetalhes` foi atualizado para incluir a propriedade `cor` no retorno da string.
+- Após criar o objeto carro dentro da factory, podemos adicionar uma nova propriedade (`cor`) ao objeto diretamente.
+- A nova propriedade é adicionada ao objeto `meuCarro` após sua criação, usando a notação de ponto (`meuCarro.cor = "Preto"`).
 
-Dessa forma, a factory pode ser facilmente estendida para criar objetos com diferentes conjuntos de propriedades, dependendo das necessidades do seu aplicativo.
+Essa é uma maneira simples de adicionar novas propriedades aos objetos criados por uma factory em JavaScript.

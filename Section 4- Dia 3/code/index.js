@@ -36,4 +36,8 @@ function createBook(title, author, pages) {
 
 const book1 = createBook('Atomic Habits', 'James Clear', 306);
 const book2 = createBook('Think', 'Napolean', 453);
+
+// 52. Adicionando propriedades
+book1.color = 'White';
+
 console.log(book1, book2);
