@@ -56,3 +56,11 @@ let frutaRemovida = frutas3.splice(1, 1);
 
 console.log('Fruta removida:', frutaRemovida);
 console.log('Array atualizado:', frutas3);
+
+
+// 68. Esvaziando uma Array
+
+// Forma 1: Atribuir um novo array vazio à variável
+let minhaArray1 = [1, 2, 3, 4, 5];
+minhaArray1 = [];
+console.log(minhaArray1); // Saída: []
