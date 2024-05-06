@@ -1,19 +1,39 @@
-// 48. Criando um Objeto
+// // 48. Criando um Objeto
 
-const book = {
-    bookTitle: 'Atomic Habits',
-    bookAuthor: 'James Clear',
-    bookPages: 306,
-    bookChapters: {
-        chap1: 'Fundamentals',
-        chap2: '1st Law'
-    },
+// const book = {
+//     bookTitle: 'Atomic Habits',
+//     bookAuthor: 'James Clear',
+//     bookPages: 306,
+//     bookChapters: {
+//         chap1: 'Fundamentals',
+//         chap2: '1st Law'
+//     },
 
-    printBook: () => {
-        console.log('Printing ...')
+//     printBook: () => {
+//         console.log('Printing ...')
+//     }
+// }
+
+// console.log(book);
+// // 49. Funções dentro de um Objeto
+// book.printBook();
+
+
+
+// 50. Criando uma factory
+
+function createBook(title, author, pages) {
+    const book = {
+        bookTitle: title,
+        bookAuthor: author,
+        bookPages: pages,
+        printBook: () => {
+            console.log('Printing ...')
+        }
     }
+    return book;
 }
 
-console.log(book);
-// 49. Funções dentro de um Objeto
-book.printBook();
+const book1 = createBook('Atomic Habits', 'James Clear', 306);
+const book2 = createBook('Think', 'Napolean', 453);
+console.log(book1, book2);
