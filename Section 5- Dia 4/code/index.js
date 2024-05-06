@@ -104,3 +104,12 @@ let numeros = [1, 2, 3, 4, 5];
 numeros.reverse();
 
 console.log(numeros); // Saída: [5, 4, 3, 2, 1]
+
+
+// 72. Verificando elementos na Array
+
+const tempLondon = [15, 13, 8, 2];
+
+const hasPositiveTemp = tempLondon.every(temp => temp >0);
+
+console.log(hasPositiveTemp);
