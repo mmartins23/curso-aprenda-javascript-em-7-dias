@@ -75,3 +75,12 @@ let array3 = [5, 6];
 let arrayConcatenada = array1.concat(array2, array3);
 
 console.log(arrayConcatenada); // Saída: [1, 2, 3, 4, 5, 6]
+
+// 70. Utilizando o Join Array
+// Criando uma array de frutas
+let frutas4 = ['Maçã', 'Banana', 'Laranja'];
+
+// Usando o método join() para unir os elementos da array em uma string
+let stringFrutas = frutas4.join(', ');
+
+console.log(stringFrutas); // Saída: "Maçã, Banana, Laranja"
